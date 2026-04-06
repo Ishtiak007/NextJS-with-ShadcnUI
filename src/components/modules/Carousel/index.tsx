@@ -78,7 +78,7 @@ export default function CarouselSection() {
     <section className="relative w-full overflow-hidden bg-[#0a0a0a] py-24 text-white">
       {/* Background atmosphere */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-125 w-200 rounded-full bg-violet-900/10 blur-[120px]" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[800px] rounded-full bg-violet-900/10 blur-[120px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-6">
@@ -93,7 +93,7 @@ export default function CarouselSection() {
               style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
             >
               From the{" "}
-              <span className="bg--fuchsia-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
                 community
               </span>
             </h2>

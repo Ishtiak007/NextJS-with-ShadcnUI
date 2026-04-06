@@ -1,6 +1,6 @@
 import BannerSection from "@/components/modules/Banner";
-import CarouselSection from "@/components/modules/Banner/Carousel";
-import CardSection from "@/components/modules/Banner/Carousel/CardSection";
+import CardSection from "@/components/modules/CardSection";
+import CarouselSection from "@/components/modules/Carousel";
 
 export default function Home() {
   return (
