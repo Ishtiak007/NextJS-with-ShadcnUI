@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, Sparkles, ViewIcon, Zap } from "lucide-react";
 import Link from "next/link";
 
 export default function BannerSection() {
@@ -33,15 +33,6 @@ export default function BannerSection() {
       />
 
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center px-6 py-28 text-center lg:py-36">
-        {/* Top badge */}
-        <Badge
-          variant="outline"
-          className="mb-8 gap-1.5 border-violet-500/40 bg-violet-500/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-violet-300"
-        >
-          <Sparkles className="h-3 w-3" />
-          New — Introducing v3.0
-        </Badge>
-
         {/* Headline */}
         <h1
           className="mb-6 text-5xl font-black leading-[1.05] tracking-tight sm:text-6xl lg:text-8xl"
@@ -68,7 +59,7 @@ export default function BannerSection() {
             size="lg"
             className="h-12 gap-2 rounded-full bg-violet-600 px-7 text-sm font-semibold text-white shadow-[0_0_30px_rgba(139,92,246,0.4)] transition-all hover:bg-violet-500 hover:shadow-[0_0_40px_rgba(139,92,246,0.6)]"
           >
-            <Link href="#">
+            <Link className="flex gap-3 items-center" href="#">
               Get started free
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -79,9 +70,9 @@ export default function BannerSection() {
             variant="ghost"
             className="h-12 gap-2 rounded-full border border-zinc-700 px-7 text-sm font-medium text-zinc-300 transition-all hover:border-zinc-500 hover:bg-white/5 hover:text-white"
           >
-            <Link href="#">
-              <Zap className="h-4 w-4 text-yellow-400" />
+            <Link className="flex gap-3 items-center" href="#">
               See live demo
+              <ViewIcon className="h-4 w-4 text-gray-400" />
             </Link>
           </Button>
         </div>
