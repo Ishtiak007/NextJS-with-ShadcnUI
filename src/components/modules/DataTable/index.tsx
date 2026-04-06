@@ -33,8 +33,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-// ─── Types ───────────────────────────────────────────────────────────────────
-
 type Status = "Active" | "Pending" | "Archived" | "Failed";
 type Plan = "Starter" | "Pro" | "Enterprise";
 
@@ -47,8 +45,6 @@ interface User {
   mrr: number;
   joined: string;
 }
-
-// ─── Sample Data ──────────────────────────────────────────────────────────────
 
 const data: User[] = [
   {
